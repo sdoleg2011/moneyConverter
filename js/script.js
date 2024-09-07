@@ -20,7 +20,7 @@ changeTotalCurse("0");
 inputRub.addEventListener('input', () => {
     const request = new XMLHttpRequest();
 
-    request.open('GET', `https://cors-anywhere.herokuapp.com/https://currate.ru/api/?get=rates&pairs=${valueBtnClick}&key=c5d61203133a4389db931c72a6d10bcf`, true);
+    request.open('GET', `https://currate.ru/api/?get=rates&pairs=${valueBtnClick}&key=c5d61203133a4389db931c72a6d10bcf`, true);
     request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
     request.send();
 
@@ -47,7 +47,7 @@ const curList = document.querySelector('#curList');
 
 const curs = new XMLHttpRequest();
 
-curs.open('GET', 'https://cors-anywhere.herokuapp.com/https://currate.ru/api/?get=currency_list&key=c5d61203133a4389db931c72a6d10bcf', true);
+curs.open('GET', 'https://currate.ru/api/?get=currency_list&key=c5d61203133a4389db931c72a6d10bcf', true);
 curs.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 curs.send();
 
