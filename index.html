@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    <style>
+        label {
+            font-size: 36px;
+            font-weight: bold;
+            display: block;
+        }
+
+        input {
+            width: 200px;
+            height: 40px;
+        }
+
+        .listContainer {
+            margin-top: 10px;
+        }
+
+        #curList {
+            display: inline-block;
+            border: 1px solid red;
+            padding: 10px;
+
+        }
+
+        .selectCurrBtn {
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.68);
+            border: 2px solid #ed00ff;
+            border-radius: 30px;
+            margin: 5px;
+        }
+
+        .selectCurrBtn:hover {
+            background-color: #ff6aea;
+        }
+        .selectCurrBtn:active {
+            background-color: #ff26a9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <label class="firstCurName">MDL</label>
+    <input id="mdl" type="text">
+    <label class="secondCurName">USD</label>
+    <input id="usd" type="text">
+</div>
+
+
+<div class="listContainer">
+    <div id="curList">
+
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
